@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description>
+      To install these features, point Eclipse at this site.
+   </description>
+   <feature url="org.jboss.bpmn2.editor.feature/org.jboss.bpmn2.editor.feature_0.0.1.jar" id="org.jboss.bpmn2.editor.feature" version="0.0.1">
+      <category name="JBoss BPMN2 Editor Nightly Build Update Site"/>
+   </feature>
+   <category-def name="JBoss BPMN2 Editor Nightly Build Update Site" label="JBoss BPMN2 Editor Nightly Build Update Site">
+      <description>
+         JBoss BPMN2 Editor Nightly Build Update Site.
+      </description>
+   </category-def>
+</site>

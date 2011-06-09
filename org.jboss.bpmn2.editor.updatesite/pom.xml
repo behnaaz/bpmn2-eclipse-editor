@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <parent>
+    <groupId>org.drools</groupId>
+    <artifactId>drools-eclipse</artifactId>
+    <version>5.3.0-SNAPSHOT</version>
+  </parent>
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.jboss.bpmn2.editor</groupId>
+  <artifactId>updatesite</artifactId>
+  <packaging>eclipse-update-site</packaging>
+
+  <name>BPMN2 :: Eclipse :: Editor :: Update site</name>
+
+  <version>0.0.1-SNAPSHOT</version>
+  <description>
+    To use this update site locally:
+    - Build the drools project with maven (including the eclipse stuff).
+    - Open Eclipse.
+    - Open the menu &quot;Help&quot;, menu item &quot;Install new software...&quot;
+    - Click on the button &quot;Add...&quot; to add a new software site.
+    - Fill in the name &quot;BPMN2 Editor local update site&quot;
+    - Click on the button &quot;Local...&quot; and select &quot;droolsjbpm/bpmn2-eclipse-editor/org.jboss.bpmn2.editor.updatesite/target/site/&quot;
+    - Select all the plugins. Click the buttons &quot;Next&quot; and &quot;Finish&quot;.
+  </description>
+
+</project>
