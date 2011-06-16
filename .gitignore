@@ -1,5 +1,6 @@
-/target
-/local
+target/
+local/
+.git/
 
 # Eclipse, Netbeans and IntelliJ files
 /.*
@@ -13,8 +14,8 @@
 .DS_Store
 
 # additional stuff
-.metadata
-*/bin
+.metadata/
+bin/
 .settings/
 *.swp
 .scala_dependencies
