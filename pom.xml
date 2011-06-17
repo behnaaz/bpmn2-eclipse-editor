@@ -21,14 +21,14 @@
     To use these Eclipse plugins locally during development,
     see the pom description of the module org.drools.updatesite.
   </description>
-  
+
   <properties>
     <tycho.version>0.11.0</tycho.version>
   </properties>
 
   <modules>
-    <module>org.jboss.bpmn2.editor-feature</module>
-    <module>org.jboss.bpmn2.editor.core</module>
+  	<module>org.jboss.bpmn2.editor.feature</module>
+  	<module>org.jboss.bpmn2.editor.core</module>
     <module>org.jboss.bpmn2.editor.core.test</module>
     <module>org.jboss.bpmn2.editor.extras</module>
     <module>org.jboss.bpmn2.editor.testutil</module>
@@ -38,21 +38,57 @@
   </modules>
 
   <repositories>
-    <repository>
-      <id>eclipse-helios</id><!-- helios is 3.6 -->
-      <layout>p2</layout>
-      <!-- TODO switch to jboss mirror, but that gives weird output (PARTIAL IU: org.eclipse.team.svn ...)-->
-      <!--<url>http://download.jboss.org/jbosstools/updates/helios/</url>-->
-      <url>http://download.eclipse.org/releases/helios</url>
-      <releases>
-        <enabled>true</enabled>
-        <updatePolicy>never</updatePolicy>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
+  
+	<repository>
+		<id>eclipse-graphiti</id>
+		<url>http://download.eclipse.org/graphiti/updates/0.7.1</url>
+		<layout>p2</layout>
+		<snapshots>
+			<enabled>true</enabled>
+		</snapshots>
+		<releases>
+			<enabled>true</enabled>
+		</releases>
+	</repository>
+    
+	<repository>
+		<id>eclipse-emf</id>
+		<url>http://download.eclipse.org/modeling/emf/updates/releases/</url>
+		<layout>p2</layout>
+		<snapshots>
+			<enabled>true</enabled>
+		</snapshots>
+		<releases>
+			<enabled>true</enabled>
+		</releases>
+	</repository>
+    
+	<repository>
+		<id>eclipse-gef</id>
+		<url>http://download.eclipse.org/tools/gef/updates/releases/</url>
+		<layout>p2</layout>
+		<snapshots>
+			<enabled>true</enabled>
+		</snapshots>
+		<releases>
+			<enabled>true</enabled>
+		</releases>
+	</repository>
+    
+	<repository>
+		<id>eclipse-scala</id>
+		<url>http://download.scala-ide.org/releases-29/2.0.0-beta</url>
+		<layout>p2</layout>
+		<snapshots>
+			<enabled>true</enabled>
+		</snapshots>
+		<releases>
+			<enabled>true</enabled>
+		</releases>
+	</repository>
+    
   </repositories>
+  
   <build>
     <plugins>
       <plugin>
